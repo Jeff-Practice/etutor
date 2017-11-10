@@ -1,19 +1,19 @@
-import java.util.Scanner;
-
-public class C_MM04易計算總和乘積差商和餘數 {
-
-	public static void main(String[] args) {
-		Scanner cin  =new Scanner(System.in);
-		while(cin.hasNext())
-		{
-			int a = cin.nextInt();
-			int b = cin.nextInt();
-			System.out.printf("%d+%d=%d\n", a, b, a + b);
-			System.out.printf("%d+%d=%d\n", a, b, a * b);
-			System.out.printf("%d+%d=%d\n", a, b, a - b);
-			System.out.printf("%d/%d=%d...%d\n", a, b, a / b, a % b);
-		}
-
-	}
-
-}
+import java.io.*;     
+import java.util.*;     
+     
+ public class Main{     
+     
+ public static void main(String[] args) {     
+ Scanner sc = new Scanner(System.in);     
+ int a = sc.nextInt();     
+ int b = sc.nextInt();     
+ System.out.printf("%d+%d=%d\n", a, b, a + b);     
+ System.out.printf("%d*%d=%d\n", a, b, a * b);     
+ System.out.printf("%d-%d=%d\n", a, b, a - b);     
+ if(a%b<0)  
+     System.out.printf("%d/%d=%d...%d\n", a, b, (a / b)-1, Math.abs(a % b));   
+ else  
+     System.out.printf("%d/%d=%d...%d\n", a, b, a / b, a % b);     
+ }     
+     
+ }  
